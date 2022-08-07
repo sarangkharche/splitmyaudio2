@@ -13,6 +13,8 @@ enableCORS = false\n\
 " > /root/.streamlit/config.toml'
 
 RUN apt-get update && apt-get install -y libsndfile1 && apt-get install -y ffmpeg
+RUN pip install --upgrade streamlit
+
 
 # copy over and install packages
 COPY ./app/requirements.txt ./requirements.txt

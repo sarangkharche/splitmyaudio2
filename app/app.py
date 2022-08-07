@@ -124,7 +124,7 @@ if st.sidebar.button("Reload"):
 
 # main page -------------------------------------------------------------------
 
-st.title("SplitMyAudio by Astrokid")
+st.title("SplitMyAudio (beta) by Astrokid")
 st.info('Follow on instagram @astrokid.music for updates')
 
 current_mode = st.selectbox(
