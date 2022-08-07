@@ -125,7 +125,7 @@ soundfile==0.10.3.post1; python_full_version >= "3.6.1" and python_version < "3.
 soupsieve==2.3.1; python_full_version > "3.0.0" and python_version >= "3.7"
 spleeter==2.3.0; python_full_version >= "3.6.1" and python_version < "3.10"
 streamlit-aggrid==0.2.3.post2; python_full_version >= "3.7.1" and python_version < "4.0"
-streamlit==1.7.0; python_version >= "3.6"
+streamlit==1.11.1; python_version >= "3.6"
 tensorboard-data-server==0.6.1; python_full_version >= "3.6.1" and python_version < "3.10" and python_version >= "3.6"
 tensorboard-plugin-wit==1.8.1; python_full_version >= "3.6.1" and python_version < "3.10" and python_version >= "3.6"
 tensorboard==2.8.0; python_full_version >= "3.6.1" and python_version < "3.10" and python_version >= "3.6"
