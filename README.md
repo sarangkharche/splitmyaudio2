@@ -1,4 +1,4 @@
-Splitmyaudio
+# Splitmyaudio
 
 1) Git clone from my github # git clone url
 2) Install requierements # pip install -r requierments.txt
@@ -10,20 +10,20 @@ Themes
 
 [theme]
 
-# Dracula theme
+Dracula theme
 
 #primaryColor="#bd93f9"
 #backgroundColor="#282a36"
 #secondaryBackgroundColor="#44475a"
 #textColor="#f8f8f2"
 
-# Yellow theme
+Yellow theme
 primaryColor="#1a191c"
 backgroundColor="#eeeeee"
 secondaryBackgroundColor="#f8d230"
 textColor="#1a191c"
 
-# Spotify theme
+Spotify theme
 
 #primaryColor="#19d860"
 #backgroundColor="#353535"
