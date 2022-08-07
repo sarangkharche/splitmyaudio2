@@ -6,7 +6,7 @@
 4) Run app.py # streamlit run app.py
 
 
-Themes
+# Themes
 
 [theme]
 
