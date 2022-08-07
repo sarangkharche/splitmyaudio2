@@ -6,7 +6,7 @@ import streamlit as st
 from spleeter.separator import Codec
 
 st.set_page_config(
-     page_title="Split My Audio",
+     page_title="Split My Audio - ML Powered Vocal Extractor",
      page_icon="app/media/favicon_io/favicon1.png",
      layout="wide",
      initial_sidebar_state="expanded",
@@ -126,7 +126,7 @@ if st.sidebar.button("Reload"):
 
 st.title("SplitMyAudio (beta) by Astrokid")
 st.info('Follow on instagram @astrokid.music for updates')
-
+st.info('Extract vocal, accompaniment and various instruments from any audio')
 current_mode = st.selectbox(
     "Single split or Multi split", ProcessingMode, format_func=lambda x: x.value)
 
@@ -189,6 +189,7 @@ if(current_mode == ProcessingMode.SINGLE):
                     for x in output_files_generator:
                         st.session_state.output_files.append(x)
                 st.success("Done!")
+                st.success('This is a success message!')
 
     with st.container():
         st.subheader("Your splitted file will appear here:")
