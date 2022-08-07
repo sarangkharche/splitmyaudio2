@@ -1,50 +1,32 @@
----
-sidebar_label: "Deploy Streamlit with SSL on AWS Lightsail with Docker, Nginx and Letsencrypt"
-description: "Deploy Streamlit with SSL on AWS Lightsail with Docker, Nginx and Letsencrypt."
----
+Splitmyaudio
 
-# Deploy Streamlit with SSL on AWS Lightsail with Docker, Nginx and Letsencrypt
+1) Git clone from my github # git clone url
+2) Install requierements # pip install -r requierments.txt
+3) Docker compose # docker-compose -f production.yml up --build -d
+4) Run app.py # streamlit run app.py
 
-## Create AWS Lightsail Instance
 
-Use Ubuntu, 20.04
+Themes
 
-## SSH into instance
+[theme]
 
-.pem is the key generated when creating the Lightsail instance
+# Dracula theme
 
-username is usually ubuntu
+#primaryColor="#bd93f9"
+#backgroundColor="#282a36"
+#secondaryBackgroundColor="#44475a"
+#textColor="#f8f8f2"
 
-`ssh -i "filename.pem" username@publicip`
+# Yellow theme
+primaryColor="#1a191c"
+backgroundColor="#eeeeee"
+secondaryBackgroundColor="#f8d230"
+textColor="#1a191c"
 
-## Go to namecheap or your domain provider
+# Spotify theme
 
-Add A record in Advanced DNS settings, with value as Lightsail instance public ip and host as somesubdomain for example or `@` for apex domain
+#primaryColor="#19d860"
+#backgroundColor="#353535"
+#secondaryBackgroundColor="#000000"
+#textColor="#ffffff"
 
-## Allow ports for Lightsail instance
-
-For testing, allow All protocols anywhere for an instance
-
-Or use selected like 80, 443
-
-## Install Docker and Docker Compose
-
-[How To Install and Use Docker on Ubuntu 20.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
-
-[How To Install and Use Docker Compose on Ubuntu 20.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
-
-## SSH git
-
-In `~/.ssh`, generate keys with `ssh-keygen`
-
-Copy the `id_rsa.pub` key and paste into GitHub settings
-
-## Clone your repo
-
-Go to working directory with example `cd ~` and git clone your repo
-
-`git@github.com:androiddevnotes/streamlittraefiklightsail.git`
-
-## Docker Compose
-
-`sudo docker-compose -f production.yml up --build -d`
