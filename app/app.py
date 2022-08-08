@@ -148,6 +148,7 @@ if st.sidebar.button("Reload"):
 # main page -------------------------------------------------------------------
 
 st.title("SplitMyAudio (beta) by Astrokid")
+st.subheader("For educational purposes only")
 st.info('Follow on instagram @astrokid.music for updates (Website hosted on Azure :desktop_computer:)')
 # emojis can be found here: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlitapp.com/
 
