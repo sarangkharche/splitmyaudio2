@@ -26,6 +26,7 @@ from utils import (ProcessingMode, SpleeterMode, SpleeterSettings,
 UPLOAD_DIR = Path("./upload_files/")
 OUTPUT_DIR = Path("./output/")
 
+
 # hide branding and hamburger
 hide_st_style = """
             <style>
@@ -91,6 +92,10 @@ st.sidebar.write("""
 upload_files = st.sidebar.file_uploader("Select Files", type=[
     "wav", "mp3"], accept_multiple_files=True)
 
+
+if upload_files:
+    st.sidebar.success("Please choose the Single Split or Multi Split on the right")
+
 for audio_file in upload_files:
     upload_path = save_uploaded_file(audio_file)
     add_audio_files(upload_path)
@@ -110,8 +115,15 @@ def youtube_dl_wrapper(url, bitrate):
     else:
         with st.spinner(f'Downloading {get_title_from_youtube_url(url)} from YouTube servers...'):
             progress = st.progress(0)
+
             file_list = download_youtube_as_mp3(
                 url, UPLOAD_DIR, progress.progress, bitrate)
+
+            if file_list:
+                st.success("Please choose the Single Split or Multi Split on the right")
+            else:
+                st.info("Error whilst downloading, try again")
+
             for file in file_list:
                 add_audio_files(file)
 
@@ -202,7 +214,6 @@ if(current_mode == ProcessingMode.SINGLE):
                     for x in output_files_generator:
                         st.session_state.output_files.append(x)
                 st.success("Done!")
-                st.success('This is a success message!')
 
     with st.container():
         st.subheader("Your splitted file will appear here:")
