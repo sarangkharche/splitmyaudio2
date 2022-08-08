@@ -136,8 +136,10 @@ if st.sidebar.button("Reload"):
 # main page -------------------------------------------------------------------
 
 st.title("SplitMyAudio (beta) by Astrokid")
-st.info('Follow on instagram @astrokid.music for updates')
-st.info('Extract vocal, accompaniment and various instruments from any audio')
+st.info('Follow on instagram @astrokid.music for updates (Website hosted on Azure :desktop_computer:)')
+# emojis can be found here: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlitapp.com/
+
+
 current_mode = st.selectbox(
     "Single split or Multi split", ProcessingMode, format_func=lambda x: x.value)
 
