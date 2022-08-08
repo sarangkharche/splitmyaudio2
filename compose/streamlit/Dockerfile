@@ -14,10 +14,6 @@ enableCORS = false\n\
 
 RUN apt-get update && apt-get install -y libsndfile1 && apt-get install -y ffmpeg
 RUN pip install --upgrade streamlit
-<<<<<<< HEAD
-
-=======
->>>>>>> bbb817a82a63318c56a157cbc7ba77db5042ee50
 
 # copy over and install packages
 COPY ./app/requirements.txt ./requirements.txt
