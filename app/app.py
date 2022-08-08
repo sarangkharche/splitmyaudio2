@@ -209,9 +209,10 @@ if(current_mode == ProcessingMode.SINGLE):
                 st.session_state.selected_music_file = selected_music
                 st.session_state.output_files = []
                 single_split_processing_success = st.empty() # create an empty place holder for single_split_processing_success
+                single_split_processing_warning = st.empty()  # create an empty place holder for single_split_processing_warning
 
                 with st.spinner('Wait we are splitting your file...'):
-                    single_split_processing_success.success("File processing....") # populate with message for single_split_processing_success
+                    single_split_processing_warning.warning("File processing....") # populate with message for single_split_processing_success
                     output_files_generator, is_exist = get_split_audio(
                         st.session_state.spleeter_settings,
                         selected_music,
@@ -220,6 +221,7 @@ if(current_mode == ProcessingMode.SINGLE):
 
                     for x in output_files_generator:
                         st.session_state.output_files.append(x)
+                        single_split_processing_warning.empty()
                         single_split_processing_success.success("Done, please audition below") # amend the message single_split_processing_success
 
 
