@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 
 volumes:
   production_traefik: {}
 
 services:
   streamlit:
-    build: 
+    build:
       context: .
       dockerfile: ./compose/streamlit/Dockerfile
     image: streamlit_local
@@ -25,3 +25,4 @@ services:
     ports:
       - "0.0.0.0:80:80"
       - "0.0.0.0:443:443"
+      - "0.0.0.0:8080:8080"
