@@ -28,7 +28,7 @@ certificatesResolvers:
 http:
   routers:
     web-secure-router:
-      rule: "Host(`beta.splitmyaudio.com`)"
+      rule: "Host(`localhost`)"
       entryPoints:
         - web-secure
       middlewares:

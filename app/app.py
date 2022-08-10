@@ -28,6 +28,8 @@ UPLOAD_DIR = Path("./upload_files/")
 OUTPUT_DIR = Path("./output/")
 
 
+
+
 # hide branding and hamburger
 hide_st_style = """
             <style>
@@ -136,6 +138,33 @@ with st.sidebar.form("youtube_dl_form"):
     submitted = st.form_submit_button("Download")
     if submitted:
         youtube_dl_wrapper(youtube_url, quality_val)
+
+
+# contact form
+
+st.sidebar.header(":mailbox: Drop a hi!")
+
+# added type=text2 so the CSS dosnt conflict with streamlit input box
+contact_form = """
+<form action="https://data.endpoint.space/cl6o3mf5j001809mbpcf1n6gg" method="POST">
+     <input type="text2" name="artistName" placeholder="artist name" required>
+     <input type="email" name="email" placeholder="artistname@email.com" required>
+     <textarea name="message" placeholder="Drop a hi!"></textarea>
+     <button type="submit">Send</button>
+</form>
+"""
+
+st.sidebar.markdown(contact_form, unsafe_allow_html=True)
+
+
+
+# Use Local CSS File
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+local_css("app/style/styles.css")
 
 st.sidebar.write("# Reload already uploaded audio files")
 if st.sidebar.button("Reload"):
