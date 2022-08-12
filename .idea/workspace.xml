@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a45b960d-9867-4920-b46a-dca1c4a509f3" name="Changes" comment="added dynamic success and warning box for single split mode">
-      <change afterPath="$PROJECT_DIR$/app/style/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a45b960d-9867-4920-b46a-dca1c4a509f3" name="Changes" comment="added css to contact form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/traefik/traefik.yml" beforeDir="false" afterPath="$PROJECT_DIR$/compose/traefik/traefik.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/a800436/Desktop/SMA/splitmyaudio2/app&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/a800436/Desktop/SMA/splitmyaudio2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\a800436\Desktop\SMA\splitmyaudio2\app" />
@@ -137,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659993352987</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added css to contact form">
+      <created>1660173693645</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660173693645</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,7 +165,8 @@
     <MESSAGE value="For educational purposes only" />
     <MESSAGE value="added dynamic success box for single split mode" />
     <MESSAGE value="added dynamic success and warning box for single split mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dynamic success and warning box for single split mode" />
+    <MESSAGE value="added css to contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added css to contact form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
