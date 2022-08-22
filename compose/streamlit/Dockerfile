@@ -16,9 +16,10 @@ RUN apt-get update && apt-get install -y libsndfile1 && apt-get install -y ffmpe
 RUN pip install --upgrade streamlit
 
 # copy over and install packages
-COPY ./app/requirements.txt ./requirements.txt
+COPY ./requirements.txt ./requirements.txt
 RUN pip3 install cython
 RUN pip3 install -r requirements.txt --no-cache-dir 
 
 # copying everything over
 COPY . .
+

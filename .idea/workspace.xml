@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a45b960d-9867-4920-b46a-dca1c4a509f3" name="Changes" comment="added css to contact form">
+    <list default="true" id="a45b960d-9867-4920-b46a-dca1c4a509f3" name="Changes" comment="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile">
+      <change afterPath="$PROJECT_DIR$/compose/streamlit/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose/streamlit/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/compose/streamlit/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/a800436/Desktop/SMA/splitmyaudio2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/a800436/Desktop/SMA/splitmyaudio2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\a800436\Desktop\SMA\splitmyaudio2\app" />
@@ -140,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660173693645</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile">
+      <created>1660312811396</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660312811397</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +176,8 @@
     <MESSAGE value="added dynamic success box for single split mode" />
     <MESSAGE value="added dynamic success and warning box for single split mode" />
     <MESSAGE value="added css to contact form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added css to contact form" />
+    <MESSAGE value="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
