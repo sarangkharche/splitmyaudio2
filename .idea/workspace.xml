@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a45b960d-9867-4920-b46a-dca1c4a509f3" name="Changes" comment="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile">
+    <list default="true" id="a45b960d-9867-4920-b46a-dca1c4a509f3" name="Changes" comment="Change Azure to DO in the note">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
     </list>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660312811397</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Change Azure to DO in the note">
+      <created>1661247145213</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661247145213</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +181,8 @@
     <MESSAGE value="added dynamic success and warning box for single split mode" />
     <MESSAGE value="added css to contact form" />
     <MESSAGE value="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile" />
+    <MESSAGE value="Change Azure to DO in the note" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Azure to DO in the note" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

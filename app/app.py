@@ -116,7 +116,7 @@ def youtube_dl_wrapper(url, bitrate):
     if(url == ""):
         st.warning("Please enter a valid url")
     else:
-        with st.spinner(f'Downloading {get_title_from_youtube_url(url)} from YouTube servers...'):
+        with st.spinner(f'Fetching {get_title_from_youtube_url(url)} ...'):
             progress = st.progress(0)
 
             file_list = download_youtube_as_mp3(
@@ -178,13 +178,13 @@ if st.sidebar.button("Reload"):
 # main page -------------------------------------------------------------------
 
 st.title("SplitMyAudio (beta) by Astrokid")
-st.subheader("For educational purposes only")
+st.subheader("🧮 For educational purposes only")
 st.info('Follow on instagram @astrokid.music for updates (Website hosted on DigitalOcean  :desktop_computer:)')
 # emojis can be found here: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlitapp.com/
 
 
 current_mode = st.selectbox(
-    "Single split or Multi split", ProcessingMode, format_func=lambda x: x.value)
+    "🔘 Single split or Multi split", ProcessingMode, format_func=lambda x: x.value)
 
 selected_music: Path
 select_stems: SpleeterMode
@@ -220,7 +220,7 @@ if(current_mode == ProcessingMode.SINGLE):
                 duaration_minutes: int = st.slider(
                     "Max duration minutes", 0, 60, 10, help="Max duration minutes of the audio to be processed. If the audio is longer than the duration, the audio will be ignored.")
 
-        if st.form_submit_button("Split"):
+        if st.form_submit_button("Split 🪓"):
             # check if settings are selected:
             if(selected_music == None or select_stems == None):
                 st.error("Please select an audio file.")
@@ -255,7 +255,7 @@ if(current_mode == ProcessingMode.SINGLE):
 
 
     with st.container():
-        st.subheader("Your splitted file will appear here:")
+        st.subheader("📁 Your splitted file will appear here:")
         if(st.session_state.selected_music_file != None and select_stems != None):
             col1, col2, col3 = st.columns(3)
             with col1:
