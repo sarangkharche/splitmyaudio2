@@ -31,7 +31,9 @@ items:
                 - streamlit
                 - run
                 - app/app.py
-              image: registry.digitalocean.com/splitmyaudio2/splitmyaudio:latest
+              # add digitalocean repo or docker hub repo
+              # image: registry.digitalocean.com/splitmyaudio2/splitmyaudio:latest
+              image: curiousish/myrepo:splitmyaudio_emojis
               #imagePullPolicy: Never
               name: streamlit-app
               ports:
