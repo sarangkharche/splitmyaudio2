@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a45b960d-9867-4920-b46a-dca1c4a509f3" name="Changes" comment="changed the contact form title in app.py &#10;added &quot;&quot; to the 8501:8501 port in the Streamlit/Dockerfile">
-      <change afterPath="$PROJECT_DIR$/compose/streamlit/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/streamlit/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/compose/streamlit/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
