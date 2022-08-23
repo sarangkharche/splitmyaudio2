@@ -142,7 +142,7 @@ with st.sidebar.form("youtube_dl_form"):
 
 # contact form
 
-st.sidebar.header(":mailbox: Drop a hi!")
+st.sidebar.header(":mailbox: If love it drop a <3")
 
 # added type=text2 so the CSS dosnt conflict with streamlit input box
 contact_form = """
