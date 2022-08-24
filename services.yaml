@@ -1,0 +1,12 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: streamlit
+spec:
+  selector:
+    app: streamlit
+  ports:
+  - port: 80
+    targetPort: 8501
+  type: LoadBalancer
